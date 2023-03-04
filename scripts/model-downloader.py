@@ -29,7 +29,7 @@ def combine(cmd, url, content_type1, opt, filename):
     return gr.Textbox.update(cmd + url + content_type1 + opt + filename)
 
 def inf(url, content_type1, filename, info):
-    return gr.Textbox(info).update(value="[URL]:  " + url + "     [Folder Path]: " + content_type1 + "     [File Name]:  " + filename)
+    return gr.Textbox(info).update(value="  " + url + "  " + content_type1 + "  " + filename)
     
 def run(command):
   with os.popen(command) as pipe:
